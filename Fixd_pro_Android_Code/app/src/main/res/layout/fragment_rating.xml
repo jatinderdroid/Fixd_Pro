@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_grey_blur"
+    tools:context="fixtpro.com.fixtpro.fragment.RatingFragment">
+
+
+    <!--Rating LIstVIew-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative1"
+        android:layout_marginLeft="@dimen/ratingleft"
+        android:layout_marginRight="@dimen/ratingright">
+
+        <com.paging.listview.PagingListView
+            android:id="@+id/ratingListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/lb_tv_white"
+            android:dividerHeight="0.4dp"></com.paging.listview.PagingListView>
+    </RelativeLayout>
+
+</RelativeLayout>

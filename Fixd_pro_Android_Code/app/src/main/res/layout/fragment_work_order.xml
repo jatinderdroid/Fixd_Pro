@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_grey_blur"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/orange_signin_back">
+                <TextView
+                    android:id="@+id/txtJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Job #00008"
+                    android:textColor="@color/register_button_text"
+                    android:textSize="@dimen/commonmediumtxt" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/commonpadding">
+                <TextView
+                    android:id="@+id/txtJobType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Washer - Install"
+                    android:singleLine="true"
+                    android:textColor="@color/register_button_text"
+                    android:textSize="@dimen/commonxlargetxt" />
+                <TextView
+                    android:id="@+id/txtUserNameAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="UserName - Address"
+                    android:singleLine="true"
+                    android:textColor="@color/register_button_text"
+                    android:textSize="@dimen/commonmediumtxt" />
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/customercomplaint"
+                    android:singleLine="true"
+                    android:textColor="@color/register_button_text"
+                    android:textSize="@dimen/commonlargetxt"
+                    android:layout_marginTop="@dimen/commonpadding"/>
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/txtcomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittextheight"
+                    android:gravity="top"
+                    android:background="@drawable/white_rectangle"
+                    android:padding="@dimen/commonpadding"
+                    android:textSize="@dimen/commonmediumtxt"
+                    android:hint="@string/neednew"
+                    android:textColorHint="@color/lb_tv_white"
+                    android:textColor="@color/lb_tv_white"
+                    android:textCursorDrawable="@color/lb_tv_white"
+                    android:imeOptions="actionNext"
+                    android:singleLine="false"
+                    android:layout_marginLeft="@dimen/commonpadding"
+                    android:layout_marginRight="@dimen/commonpadding"/>
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/repairtype"
+                    android:singleLine="true"
+                    android:textColor="@color/register_button_text"
+                    android:textSize="@dimen/commonlargetxt"
+                    android:layout_marginTop="@dimen/commonpadding"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/commonpadding"
+                    android:background="@drawable/white_rectangle"
+                    android:layout_marginLeft="@dimen/commonpadding"
+                    android:layout_marginRight="@dimen/commonpadding">
+                    <TextView
+                        android:id="@+id/txtRepairType"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Washer Install"
+                        android:singleLine="true"
+                        android:textColor="@color/register_button_text"
+                        android:textSize="@dimen/commonmediumtxt" />
+                    <TextView
+                        android:id="@+id/txtReapirTypeCost"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="$ 75.00"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:textColor="@color/register_button_text"
+                        android:textSize="@dimen/commonmediumtxt" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtPartsType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Parts:"
+                    android:singleLine="true"
+                    android:textColor="@color/register_button_text"
+                    android:textSize="@dimen/commonlargetxt"
+                    android:layout_marginTop="@dimen/commonpadding"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/commonpadding"
+                    android:background="@drawable/white_rectangle"
+                    android:layout_marginLeft="@dimen/commonpadding"
+                    android:layout_marginRight="@dimen/commonpadding">
+                    <TextView
+                        android:id="@+id/partstxtType"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="House and Connections"
+                        android:singleLine="true"
+                        android:textColor="@color/register_button_text"
+                        android:textSize="@dimen/commonmediumtxt" />
+                    <TextView
+                        android:id="@+id/partstxtDollerT"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="$ 75.00"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:textColor="@color/register_button_text"
+                        android:textSize="@dimen/commonmediumtxt" />
+                </LinearLayout>
+
+                <!--Bottom sub total and total-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/commonpadding"
+                    android:layout_marginLeft="@dimen/commonpadding"
+                    android:layout_marginRight="@dimen/commonpadding">
+                    <TextView
+                        android:id="@+id/txtDiagnostic"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.6"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diagnostic"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:textColor="@color/register_button_text"
+                        android:textSize="@dimen/commonmediumtxt" />
+                    <TextView
+                        android:id="@+id/txtDiagnosticDoller"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:layout_height="wrap_content"
+                        android:text="$ 75.00"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:textColor="@color/register_button_text"
+                        android:textSize="@dimen/commonmediumtxt" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/commonpadding"
+                    android:layout_marginRight="@dimen/commonpadding">
+                    <TextView
+                        android:id="@+id/txtSubTotal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.6"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtotal"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:textColor="@color/register_button_text"
+                        android:textSize="@dimen/commonmediumtxt" />
+                    <TextView
+                        android:id="@+id/txtSubTotalDoller"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:layout_height="wrap_content"
+                        android:text="$ 75.00"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:textColor="@color/register_button_text"
+                        android:textSize="@dimen/commonmediumtxt" />
+
+                </LinearLayout>
+
+                <include layout="@layout/leftmar_line"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/commonpadding"
+                    android:layout_marginRight="@dimen/commonpadding">
+                    <TextView
+                        android:id="@+id/txtTax"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.6"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tax"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:textColor="@color/register_button_text"
+                        android:textSize="@dimen/commonlargetxt" />
+                    <TextView
+                        android:id="@+id/txtTaxDoller"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:layout_height="wrap_content"
+                        android:text="$ 75.00"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:textColor="@color/register_button_text"
+                        android:textSize="@dimen/commonmediumtxt" />
+                </LinearLayout>
+                <!--Double Lines-->
+                <include layout="@layout/leftmar_line"></include>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"></View>
+                <include layout="@layout/leftmar_line"></include>
+                <!--Total..-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/commonpadding"
+                    android:layout_marginRight="@dimen/commonpadding">
+                    <TextView
+                        android:id="@+id/txtTotal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.6"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:textColor="@color/register_button_text"
+                        android:textSize="@dimen/commonlargetxt" />
+                    <TextView
+                        android:id="@+id/txtTotalDoller"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:layout_height="wrap_content"
+                        android:text="$ 75.00"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:textColor="@color/register_button_text"
+                        android:textSize="@dimen/commonmediumtxt" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

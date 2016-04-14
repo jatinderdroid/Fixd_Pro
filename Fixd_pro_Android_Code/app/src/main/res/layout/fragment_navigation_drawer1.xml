@@ -1,0 +1,240 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/drawer_bg_color">
+
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_fixitpro"
+            android:paddingTop="30dp"
+            android:paddingLeft="20dp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/drawer"
+        android:orientation="vertical"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_header_container"
+        android:layout_marginTop="25dp" >
+
+        <LinearLayout
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/home_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:src="@drawable/home"
+                android:paddingRight="25dp"/>
+
+            <TextView
+                android:id="@+id/home_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_item_home"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/drawer_text_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/myjobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/myjobs_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:src="@drawable/tools"
+                android:paddingRight="25dp"/>
+
+            <TextView
+                android:id="@+id/myjobs_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_item_myjobs"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/drawer_text_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/payments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/payments_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:src="@drawable/payment"
+                android:paddingRight="25dp"/>
+
+            <TextView
+                android:id="@+id/payments_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_item_payments"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/drawer_text_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/myratings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/myratings_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:src="@drawable/ratings"
+                android:paddingRight="25dp"/>
+
+            <TextView
+                android:id="@+id/myratings_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_item_myratings"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/drawer_text_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/settings_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:src="@drawable/settings"
+                android:paddingRight="25dp"/>
+
+            <TextView
+                android:id="@+id/settings_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_item_settings"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/drawer_text_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="145dp"
+            android:layout_height="2dp"
+            android:background="@color/register_button_text"/>
+
+        <LinearLayout
+            android:id="@+id/contactus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/contactus_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:src="@drawable/contect"
+                android:paddingRight="25dp"/>
+
+            <TextView
+                android:id="@+id/contactus_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_item_contactus"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/drawer_text_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/logout_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:src="@drawable/logout"
+                android:paddingRight="25dp"/>
+
+            <TextView
+                android:id="@+id/logout_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_item_logout"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/drawer_text_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

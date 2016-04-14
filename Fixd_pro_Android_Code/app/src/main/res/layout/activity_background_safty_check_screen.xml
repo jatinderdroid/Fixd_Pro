@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/background_blur"
+    tools:context="fixtpro.com.fixtpro.Driver_Info_Activity">
+    <RelativeLayout
+
+        android:orientation="horizontal"
+        android:id="@+id/header_items"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="@dimen/padding_header_items"
+            android:id="@+id/txtBack"
+            android:text="@string/back"
+            android:textSize="@dimen/text_size_header_items"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="@dimen/padding_header_items"
+            android:id="@+id/txtDone"
+            android:layout_alignParentRight="true"
+            android:text="@string/done"
+            android:textSize="@dimen/text_size_header_items"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/header_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="@dimen/layout_padding"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/layout_backsafety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/text_backgroundsafety"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/edittext_padding"
+                    android:textColor="@android:color/white"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textSize="@dimen/edittext_size"
+                    android:gravity="center_horizontal"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white"
+                    android:text="@string/backgroun_title" />
+                <TextView
+                    android:id="@+id/text_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/edittext_padding"
+                    android:textColor="@android:color/white"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/small_text_size"
+                    android:gravity="center_horizontal"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white"
+                    android:text="@string/back_descripiton" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/layout_backsafety"
+                android:id="@+id/layout_lock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_between_margin"
+                android:orientation="vertical">
+                <EditText
+                    android:maxLength="9"
+                    android:id="@+id/text_securityno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/security_checkbox_padding"
+                    android:textColor="@android:color/white"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/edittext_size"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:background="@drawable/white_border_transperant"
+                    android:textColorHint="@android:color/white"
+                    android:hint="@string/securityno"
+                    android:drawableRight="@drawable/lock"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/layout_lock"
+                android:id="@+id/layout_thisno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text_thisno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/edittext_padding"
+                    android:textColor="@android:color/white"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/small_text_size"
+                    android:gravity="center_horizontal"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white"
+                    android:text="@string/this_number" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_details"
+                android:layout_below="@+id/layout_thisno"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/details_hei"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/text_between_margin"
+                android:background="@drawable/white_border_transperant">
+                <ScrollView
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/text_enduserDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@android:color/white"
+
+                    android:textSize="@dimen/small_text_size"
+
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white"
+                    android:hint="@string/details_" />
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/layout_details"
+                android:layout_marginTop="@dimen/text_between_margin"
+                android:id="@+id/layout_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:theme="@style/MyCheckBox"
+                    android:id="@+id/check_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/white" />
+                <TextView
+                    android:id="@+id/check_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_text"
+                    android:textColor="@android:color/white"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/very_small_text_size"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

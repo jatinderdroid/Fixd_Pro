@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fixtpro.com.fixtpro.fragment.AddServiceFragment">
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:gravity="center"
+        android:padding="12dp"
+        android:id="@+id/add_service_header_text"
+        android:text="What Type Of Service?"
+        android:layout_width="match_parent"
+        android:textColor="@color/orange_signin_back"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:dividerHeight="0.7dp"
+        android:divider="#81ffffff"
+        android:layout_below="@+id/add_service_header_text"
+        android:id="@+id/lstServiceTyep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</RelativeLayout>

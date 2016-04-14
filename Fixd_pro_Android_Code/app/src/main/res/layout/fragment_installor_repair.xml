@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fixtpro.com.fixtpro.fragment.InstallorRepairFragment">
+<ListView
+    android:layout_alignParentTop="true"
+    android:layout_above="@+id/layout_finish_job"
+    android:id="@+id/lstInstallRepair"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></ListView>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout_finish_job"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_finishjob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/finish_job"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/left_right_margin"/>
+    </LinearLayout>
+</RelativeLayout>

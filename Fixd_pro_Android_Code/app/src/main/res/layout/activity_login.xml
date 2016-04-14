@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_blur"
+    tools:context="fixtpro.com.fixtpro.Login_Register_Activity">
+    <RelativeLayout
+
+        android:orientation="horizontal"
+        android:id="@+id/header_items"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="@dimen/padding_header_items"
+            android:id="@+id/txtBack"
+            android:text="@string/back"
+            android:textSize="@dimen/text_size_header_items"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="@dimen/padding_header_items"
+            android:id="@+id/txtDone"
+            android:layout_alignParentRight="true"
+            android:text="@string/done"
+            android:textSize="@dimen/text_size_header_items"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/header_items"
+        android:orientation="horizontal"
+        android:id="@+id/logo_container"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/password_fixitpro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="36dp"
+        android:orientation="vertical"
+        android:id="@+id/varification_text"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/logo_container"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1.6"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/txtPhone"
+                    android:textColor="@android:color/white"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size_header_items"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white"
+                    android:hint="@string/phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="16dp"
+                android:layout_height="wrap_content">
+                <ImageView
+
+                    android:src="@drawable/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1.6"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:textColor="@android:color/white"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/text_size_header_items"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white"
+                    android:hint="@string/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

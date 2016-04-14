@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    >
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_weight="1.6"
+    android:layout_width="0dp"
+    android:gravity="center"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgTech"
+        android:src="@drawable/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+
+    android:layout_weight="1">
+    <TextView
+        android:singleLine="true"
+        android:gravity="bottom"
+        android:textColor="@android:color/white"
+        android:text="John"
+        android:padding="3dp"
+        android:id="@+id/txtTechname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:textColor="@android:color/white"
+                android:text="John@gmail.com"
+                android:id="@+id/txtEmail"
+                android:layout_width="0dp"
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:layout_height="match_parent" />
+            <TextView
+                android:padding="3dp"
+                android:textColor="@android:color/white"
+                android:text="8848484845"
+                android:id="@+id/txtPhone"
+                android:layout_width="0dp"
+                android:singleLine="true"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/edit"
+        android:orientation="horizontal"
+        android:layout_weight="0.8"
+        android:layout_width="0dp"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/pencil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

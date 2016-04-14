@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/orange_background"
+        android:orientation="vertical">
+
+        <fixtpro.com.fixtpro.views.WheelView
+            android:id="@+id/wheelView"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+        </fixtpro.com.fixtpro.views.WheelView>
+        <LinearLayout
+            android:layout_below="@+id/layout_details"
+            android:layout_marginTop="@dimen/text_between_margin"
+            android:id="@+id/layout_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/img_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ok_dialog"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cross"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

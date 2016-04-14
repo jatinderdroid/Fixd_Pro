@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Varification Screen-->
+    <color name="orange_signin_back">#fc7506</color>
+    <color name="varification_box">#51ffffff</color>
+    <color name="register_button_text">#ffffff</color>
+    <color name="grey_skill_back">#7d7b7b</color>
+    <color name="drawer_bg_color">#464646</color>
+    <color name="drawer_text_color">#fa7507</color>
+    <color name="actionbar_bg">#414141</color>
+    <color name="calendar_day_color">#9fa1a2</color>
+    <color name="transperant">#00000000</color>
+</resources>

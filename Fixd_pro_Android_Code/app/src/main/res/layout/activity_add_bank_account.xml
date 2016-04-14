@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_blur"
+    tools:context="fixtpro.com.fixtpro.Login_Register_Activity">
+    <RelativeLayout
+
+        android:orientation="horizontal"
+        android:id="@+id/header_items"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="@dimen/padding_header_items"
+            android:id="@+id/txtBack"
+            android:text="@string/back"
+            android:textSize="@dimen/text_size_header_items"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="@dimen/padding_header_items"
+            android:id="@+id/txtDone"
+            android:layout_alignParentRight="true"
+            android:text="@string/done"
+            android:textSize="@dimen/text_size_header_items"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/header_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="@dimen/layout_padding"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/picture_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="right"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/bank_fixid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:src="@drawable/bank_dollar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/bank_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/add_photo_text_padding"
+                    android:textSize="@dimen/add_photo_size"
+                    android:textColor="@android:color/white"
+                    android:text="@string/add_bank_account"
+                    android:id="@+id/lblAddBankAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="@dimen/layout_padding"
+                android:layout_below="@+id/picture_container"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:id="@+id/user_info_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:visibility="invisible"
+
+                    android:id="@+id/txtFirstName"
+                    android:textColor="@android:color/white"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textSize="@dimen/edittext_size"
+                    android:gravity="center_horizontal"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white"
+                    android:hint="@string/first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:padding="@dimen/edittext_padding"
+                    android:singleLine="true"
+                    android:id="@+id/txtBankName"
+                    android:textColor="@android:color/white"
+                    android:imeOptions="actionNext"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/edittext_size"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white"
+                    android:hint="@string/bank_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:padding="@dimen/edittext_padding"
+                    android:singleLine="true"
+                    android:id="@+id/txtRoutingNumber"
+                    android:inputType="number"
+                    android:textSize="@dimen/edittext_size"
+                    android:textColor="@android:color/white"
+                    android:imeOptions="actionNext"
+                    android:gravity="center_horizontal"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white"
+                    android:hint="@string/routing_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:padding="@dimen/edittext_padding"
+                    android:singleLine="true"
+                    android:id="@+id/txtAccountNumber"
+                    android:inputType="number"
+                    android:textColor="@android:color/white"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/edittext_size"
+                    android:gravity="center_horizontal"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white"
+                    android:hint="@string/account_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/txtAccountType"
+                    android:textSize="@dimen/edittext_size"
+                    android:textColor="@android:color/white"
+                    android:imeOptions="actionDone"
+                    android:gravity="center_horizontal"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white"
+                    android:hint="@string/account_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

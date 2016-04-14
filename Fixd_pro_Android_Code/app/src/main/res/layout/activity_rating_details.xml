@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_grey_blur"
+    tools:context="fixtpro.com.fixtpro.RatingDetailsActivity">
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/actionbar_bg"
+        android:minHeight="?attr/actionBarSize"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/screen_cross" />
+
+            <TextView
+                android:id="@+id/txtToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/rating_details"
+                android:textColor="@color/register_button_text"
+                android:textSize="@dimen/largetext" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/ratingleft"
+            android:layout_marginRight="@dimen/ratingleft"
+            android:orientation="vertical">
+            <!--Top Header...-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <fixtpro.com.fixtpro.views.RatingBarView
+                    android:id="@+id/custom_ratingbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    app:starCount="5"
+                    app:starEmpty="@drawable/blank_star"
+                    app:starFill="@drawable/fill_star"
+                    app:starImageSize="@dimen/ratinglargestar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtJobId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Job #8"
+                    android:textColor="@color/lb_tv_white"
+                    android:textSize="@dimen/ratingxlargetext" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:text="Robort Allen"
+                    android:textColor="@color/lb_tv_white"
+                    android:textSize="@dimen/ratingxlargetext" />
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="testing,testingtesting,testingtesting,testingtesting,testingtesting,testing"
+                    android:textColor="@color/lb_tv_white"
+                    android:textSize="@dimen/ratingtxtsmall" />
+
+                <TextView
+                    android:id="@+id/txtDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="testing,"
+                    android:textColor="@color/lb_tv_white"
+                    android:textSize="@dimen/ratingxlargetext" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtArrivaltext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="Arrival Time:"
+                        android:textColor="@color/lb_tv_white"
+                        android:textSize="@dimen/ratingtxtlarge" />
+
+                    <TextView
+                        android:id="@+id/txtArrivalTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="(null)"
+                        android:textColor="@color/lb_tv_white"
+                        android:textSize="@dimen/ratingxlargetext" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtCompletetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="Completed Time:"
+                        android:textColor="@color/lb_tv_white"
+                        android:textSize="@dimen/ratingtxtlarge" />
+
+                    <TextView
+                        android:id="@+id/txtCompleteTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="(null)"
+                        android:textColor="@color/lb_tv_white"
+                        android:textSize="@dimen/ratingxlargetext" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTechnician"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:text="Technician"
+                    android:textColor="@color/lb_tv_white"
+                    android:textSize="@dimen/ratingxlargetext" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/all_margintop"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/circleImage"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/all_margintop"
+                        android:src="@drawable/addphoto_img"
+                        app:civ_border_color="#ffffff" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtTechName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:text="Georges Erre"
+                            android:textColor="@color/lb_tv_white"
+                            android:textSize="@dimen/ratingtxtlarge" />
+                        <TextView
+                            android:id="@+id/txtAverage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:text="Average Rating"
+                            android:textColor="@color/lb_tv_white"
+                            android:textSize="@dimen/ratingtxtlarge" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/all_margintop"
+                            android:orientation="horizontal">
+                            <fixtpro.com.fixtpro.views.RatingBarView
+                                android:id="@+id/customrating_tech"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:starCount="5"
+                                app:starEmpty="@drawable/blank_star"
+                                app:starFill="@drawable/fill_star"
+                                app:starImageSize="@dimen/ratestarmediumsi" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--line-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtcomment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:padding="12dp"
+                    android:text="Comments"
+                    android:textColor="@color/lb_tv_white"
+                    android:textSize="@dimen/ratingtxtlarge" />
+                <TextView
+                    android:id="@+id/txtDetailss"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:singleLine="false"
+                    android:padding="12dp"
+                    android:text="Comments"
+                    android:textColor="@color/lb_tv_white"
+                    android:textSize="@dimen/ratingtxtlarge" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

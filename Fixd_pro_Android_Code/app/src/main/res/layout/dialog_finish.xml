@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/popuplayoutmagin"
+    android:background="@drawable/orange_background">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/partleftrightmar"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgThumbLuck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumb" />
+
+        <TextView
+            android:id="@+id/titletext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/partleftrightmar"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="My Work Here Is Done!"
+            android:textColor="@color/register_button_text"
+            android:textSize="@dimen/commonxlargetxt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/left_right_margin"
+            android:gravity="center"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="Robort Allen"
+            android:textColor="@color/register_button_text"
+            android:textSize="@dimen/commonxlargetxt" />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="1234-main chandigarh"
+            android:textColor="@color/register_button_text"
+            android:textSize="@dimen/commonmediumtxt" />
+
+        <TextView
+            android:id="@+id/txtDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="August 3,2015,"
+            android:textColor="@color/register_button_text"
+            android:textSize="@dimen/commonxlargetxt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtArrivaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="Arrival Time:"
+                android:textColor="@color/register_button_text"
+                android:textSize="@dimen/commonmediumtxt" />
+
+            <TextView
+                android:id="@+id/txtArrivalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="(null)"
+                android:textColor="@color/register_button_text"
+                android:textSize="@dimen/commonxlargetxt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtCompletetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="Completed Time:"
+                android:textColor="@color/register_button_text"
+                android:textSize="@dimen/commonmediumtxt" />
+
+            <TextView
+                android:id="@+id/txtCompleteTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="(null)"
+                android:textColor="@color/register_button_text"
+                android:textSize="@dimen/commonxlargetxt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:layout_marginTop="@dimen/partleftrightmar"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_Finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/finish" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/screen_cross" />
+</RelativeLayout>

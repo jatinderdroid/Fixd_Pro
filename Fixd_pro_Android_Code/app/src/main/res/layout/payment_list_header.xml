@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/topHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layoutin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTotalEarningNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/all_margintop"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="25,000,345,5"
+                android:textColor="@color/orange_signin_back"
+                android:textSize="@dimen/paymentlargetext" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTotalEarning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/all_margintop"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/totalearning"
+                android:textColor="@color/lb_tv_white"
+                android:textSize="@dimen/paymentmediumtext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout2"
+            android:layout_marginTop="@dimen/all_margintop"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtnumtotaljobAccepted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="45"
+                    android:textColor="@color/orange_signin_back"
+                    android:textSize="@dimen/paymentmediumtext" />
+
+                <TextView
+                    android:id="@+id/txtjobstxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/jobsaccepted"
+                    android:textColor="@color/lb_tv_white"
+                    android:textSize="@dimen/paymentmediumtext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtnumhours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="2,855363,47"
+                    android:textColor="@color/orange_signin_back"
+                    android:textSize="@dimen/paymentmediumtext" />
+
+                <TextView
+                    android:id="@+id/txtHourtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/hoursworked"
+                    android:textColor="@color/lb_tv_white"
+                    android:textSize="@dimen/paymentmediumtext" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@android:color/white"/>
+    </RelativeLayout>
+</LinearLayout>

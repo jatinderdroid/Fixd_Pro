@@ -1,0 +1,145 @@
+<resources>
+    <!-- Dimensions   for xhdpi.... -->
+    <!--common attributes for all screens-->
+    <!-- Common Dimen-->
+
+    <dimen name="padding_header_items">12dp</dimen>
+    <dimen name="text_size_header_items">20sp</dimen>
+    <!-- Verification Screen -->
+    <dimen name="top_heading_textsize">25sp</dimen>
+    <dimen name="varfication_box_height">45dp</dimen>
+    <dimen name="varfication_box_width">29dp</dimen>
+    <dimen name="varfication_box_margin">14dp</dimen>
+    <dimen name="varfication_text_size">20sp</dimen>
+    <dimen name="login_register_text_size">24sp</dimen>
+    <dimen name="login_register_padding">30dp</dimen>
+    <dimen name="login_top_margin">18dp</dimen>
+
+    <!--Common Dimens for multiple Activities.....1> User Profile Screen
+     2>Add_Driver_LicScreen
+     3>BackgroundSaftyCheckScreen
+    *
+    *add tech Dialog.....
+    -->
+    <dimen name="profile_pic_hei_wid">130dp</dimen>
+    <dimen name="edittext_size">24sp</dimen>
+    <dimen name="add_photo_size">22sp</dimen>
+    <dimen name="edittext_padding">10dp</dimen>
+    <dimen name="layout_padding">18dp</dimen>
+    <dimen name="add_photo_text_padding">9dp</dimen>
+
+    <!--BackgroundSaftyCheckScreen...-->
+    <dimen name="small_text_size">16sp</dimen>
+    <dimen name="very_small_text_size">12sp</dimen>
+    <dimen name="text_between_margin">20dp</dimen>
+    <dimen name="details_hei">200dp</dimen>
+    <dimen name="security_checkbox_padding">12dp</dimen>
+
+    <!--BAckGround Safty check PopUP........-->
+    <dimen name="dialoglargetextsize">30sp</dimen>
+    <dimen name="dialogsmalltextsize">15sp</dimen>
+    <dimen name="dialogmediumtextsize">20sp</dimen>
+    <dimen name="popuplayoutmagin">15dp</dimen>
+
+
+
+    <!--Add_TechScreen....-->
+    <dimen name="margin_top">40dp</dimen>
+
+    <!-- Add Driver screen-->
+    <dimen name="top_margin">24dp</dimen>
+    <!-- Select Trade Skill-->
+    <dimen name="trade_skill_text_size">20sp</dimen>
+
+    <!--Setup complete Screen Diamens.....-->
+    <dimen name="margin">12dp</dimen>
+    <dimen name="txt_normal_w">15sp</dimen>
+    <dimen name="txt_voila">25sp</dimen>
+    <dimen name="padd">6dp</dimen>
+
+
+    <!--JobCompleted Screen....-->
+    <dimen name="main_left_right_margin">45dp</dimen>
+    <dimen name="all_margintop">12dp</dimen>
+    <dimen name="service_btn_padding">25dp</dimen>
+    <dimen name="largetext">22sp</dimen>
+    <dimen name="smallltext">15sp</dimen>
+    <dimen name="mediumtxts">18sp</dimen>
+    <dimen name="jobcompleteratesize">48dp</dimen>
+    <dimen name="imgheiwid">80dp</dimen>
+
+    <!-- Service Ticket dimen-->
+    <dimen name="serviclarge_text">18sp</dimen>
+    <dimen name="servicesmall_text">14sp</dimen>
+    <dimen name="serviceleftright">10dp</dimen>
+    <dimen name="servicepadding">3dp</dimen>
+    <dimen name="servicedes">70dp</dimen>
+
+    <!--Rating Fragment....-->
+    <dimen name="ratingleft">20dp</dimen>
+    <dimen name="ratingright">12dp</dimen>
+    <dimen name="ratingtxtlarge">20sp</dimen>
+    <dimen name="ratingtxtmedium">18sp</dimen>
+    <dimen name="ratingtxtsmall">15sp</dimen>
+
+    <dimen name="ratinglisttopmargin">50dp</dimen>
+    <dimen name="ratingstartsize">60dp</dimen>
+    <dimen name="ratinglistitemstarsize">30dp</dimen>
+
+    <!--Reating Details......-->
+    <dimen name="ratingxlargetext">26sp</dimen>
+    <dimen name="ratinglargestar">65dp</dimen>
+    <dimen name="ratestarmediumsi">50dp</dimen>
+
+
+
+    <!--Working Radius Activity Dimens.............................-->
+    <dimen name="worklargetextsize">30sp</dimen>
+    <dimen name="workheighttopwidget">110dp</dimen>
+    <dimen name="worksmalltextsize">17sp</dimen>
+    <dimen name="worktopmargin">20dp</dimen>
+    <dimen name="workleftrightmargin">10dp</dimen>
+
+
+    <!--Camra_Gallery Dialog(PopUP)-->
+    <dimen name="camgall_texttop">30sp</dimen>
+    <dimen name="camgall_textbottom">25sp</dimen>
+
+    <!--AssignTechnician Activity Dimens....-->
+    <dimen name="assignpichei_wid">72dp</dimen>
+    <dimen name="assignrateingsize">24dp</dimen>
+    <dimen name="assigntextnormal">20sp</dimen>
+    <dimen name="assigntextsmall">17sp</dimen>
+
+    <!--Payment,,,,Payments Deatails...-->
+    <dimen name="paymentlargetext">28sp</dimen>
+    <dimen name="paymentmediumtext">22sp</dimen>
+
+    <!--StartJOb Pop on a EnRute up Screen-->
+    <dimen name="startmediumtext">21sp</dimen>
+    <dimen name="startsmalltext">16sp</dimen>
+
+
+    <!--Common Text For Multiple Screens......-->
+    <dimen name="commonxlargetxt">22sp</dimen>
+    <dimen name="commonlargetxt">23sp</dimen>
+    <dimen name="commonmediumtxt">19sp</dimen>
+    <dimen name="commonsmalltxt">13sp</dimen>
+    <dimen name="commonpadding">11dp</dimen>
+
+    <dimen name="commonxxl">40sp</dimen>
+    <dimen name="cdimbottomtop">38dp</dimen>
+
+    <!--PartNeeded-->
+    <dimen name="partleftrightmar">30dp</dimen>
+
+    <!--Layout  Work Order-->
+    <dimen name="edittextheight">80dp</dimen>
+    <dimen name="telledittxtheight">137dp</dimen>
+
+  <!--Install Information Screen-->
+    <dimen name="left_right_margin">20dp</dimen>
+    <dimen name="picheight">185dp</dimen>
+
+
+</resources>

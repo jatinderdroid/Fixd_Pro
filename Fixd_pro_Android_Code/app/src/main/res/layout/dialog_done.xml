@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/popuplayoutmagin"
+    android:background="@drawable/orange_background">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/partleftrightmar"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgcheckright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check_wi" />
+
+        <TextView
+            android:id="@+id/titletext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/partleftrightmar"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/wahoo"
+            android:textColor="@color/register_button_text"
+            android:textSize="@dimen/commonxlargetxt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="@string/youwill"
+            android:textColor="@color/register_button_text"
+            android:textSize="@dimen/commonmediumtxt" />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="$ 269.10"
+            android:textColor="@color/register_button_text"
+            android:textSize="@dimen/commonxxl" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtJobTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="Job Total ="
+                android:textColor="@color/register_button_text"
+                android:textSize="@dimen/commonxlargetxt" />
+
+            <TextView
+                android:id="@+id/txtJobDoller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="$56.00"
+                android:textColor="@color/register_button_text"
+                android:textSize="@dimen/commonxlargetxt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtYourCut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/yourcut"
+                android:textColor="@color/register_button_text"
+                android:textSize="@dimen/commonlargetxt" />
+
+            <TextView
+                android:id="@+id/txtyoucutdoller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="$56.09"
+                android:textColor="@color/register_button_text"
+                android:textSize="@dimen/commonxlargetxt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtOurfee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/outfee"
+                android:textColor="@color/register_button_text"
+                android:textSize="@dimen/commonlargetxt" />
+
+            <TextView
+                android:id="@+id/txtOurfeedoller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="$3874.00"
+                android:textColor="@color/register_button_text"
+                android:textSize="@dimen/commonxlargetxt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtGovt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/govtcuts"
+                android:textColor="@color/register_button_text"
+                android:textSize="@dimen/commonlargetxt" />
+
+            <TextView
+                android:id="@+id/txtGovtdoller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="$34.00"
+                android:textColor="@color/register_button_text"
+                android:textSize="@dimen/commonxlargetxt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/layout2"
+        android:layout_marginTop="@dimen/partleftrightmar">
+        <ImageView
+            android:id="@+id/img_Finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/finish"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

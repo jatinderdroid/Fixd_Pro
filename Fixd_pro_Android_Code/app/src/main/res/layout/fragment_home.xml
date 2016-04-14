@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_grey_blur"
+    tools:context="fixtpro.com.fixtpro.fragment.HomeFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:id="@+id/availschedule_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/scheduled">
+        <TextView
+            android:id="@+id/available"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/scheduled"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/schedulelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_marginTop="5dp">
+
+        <com.paging.listview.PagingListView
+            android:id="@+id/scheduleJob_list_view"
+            android:dividerHeight="1dp"
+            android:layout_above="@+id/viewall"
+            android:divider="@color/register_button_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/viewall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calender"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/viewall"
+                android:textColor="@color/register_button_text"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.paging.listview.PagingListView
+        android:id="@+id/availableJob_list_view"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/viewall"
+        android:divider="@color/register_button_text"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

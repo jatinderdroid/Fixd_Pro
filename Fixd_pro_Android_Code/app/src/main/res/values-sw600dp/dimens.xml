@@ -1,0 +1,50 @@
+<resources>
+    <!-- Dimensions   for xhdpi.... -->
+    <!--common attributes for all screens-->
+    <!-- Common Dimen-->
+
+    <dimen name="padding_header_items">13dp</dimen>
+    <dimen name="text_size_header_items">30sp</dimen>
+    <!-- Verification Screen -->
+    <dimen name="top_heading_textsize">35sp</dimen>
+    <dimen name="varfication_box_height">65dp</dimen>
+    <dimen name="varfication_box_width">40dp</dimen>
+    <dimen name="varfication_box_margin">22dp</dimen>
+    <dimen name="varfication_text_size">30sp</dimen>
+    <dimen name="login_register_text_size">35sp</dimen>
+    <dimen name="login_register_padding">45dp</dimen>
+    <dimen name="login_top_margin">28dp</dimen>
+
+    <!--Common Dimens for multiple Activities.....1> User Profile Screen
+     2>Add_Driver_LicScreen
+     3>BackgroundSaftyCheckScreen
+    *
+    *add tech Dialog.....
+    -->
+    <dimen name="profile_pic_hei_wid">180dp</dimen>
+    <dimen name="edittext_size">35sp</dimen>
+    <dimen name="add_photo_size">28sp</dimen>
+    <dimen name="edittext_padding">14dp</dimen>
+    <dimen name="layout_padding">28dp</dimen>
+    <dimen name="add_photo_text_padding">19dp</dimen>
+
+    <!--BackgroundSaftyCheckScreen...-->
+    <dimen name="small_text_size">22sp</dimen>
+    <dimen name="very_small_text_size">16sp</dimen>
+    <dimen name="text_between_margin">35dp</dimen>
+    <dimen name="details_hei">300dp</dimen>
+    <!--Add_TechScreen....-->
+    <dimen name="margin_top">80dp</dimen>
+
+    <!-- Add Driver screen-->
+    <dimen name="top_margin">24dp</dimen>
+    <!-- Select Trade Skill-->
+    <dimen name="trade_skill_text_size">20sp</dimen>
+
+    <!--Setup complete Screen Diamens.....-->
+    <dimen name="margin">20dp</dimen>
+    <dimen name="txt_normal_w">20sp</dimen>
+    <dimen name="txt_voila">35sp</dimen>
+    <dimen name="padd">15dp</dimen>
+
+</resources>

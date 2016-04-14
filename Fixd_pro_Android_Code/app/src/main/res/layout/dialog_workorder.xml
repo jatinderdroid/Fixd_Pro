@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/popuplayoutmagin"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/orange_background">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/partleftrightmar">
+
+            <ImageView
+                android:id="@+id/imgThumbLuck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting_wi" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:text="@string/doyouhave"
+                android:padding="@dimen/edittext_padding"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/commonmediumtxt" />
+            <TextView
+                android:layout_marginTop="@dimen/commonpadding"
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:text="@string/ifyouhave"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/commonsmalltxt"
+                android:paddingBottom="@dimen/partleftrightmar"/>
+
+        </LinearLayout>
+        <!--Complete Job Now...-->
+        <LinearLayout
+            android:id="@+id/layout_complete_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:text="@string/completejobnow"
+                android:padding="@dimen/commonpadding"
+                android:singleLine="true"
+                android:textColor="@color/orange_signin_back"
+                android:textSize="@dimen/commonxlargetxt" />
+            <ImageView
+                android:id="@+id/img_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:src="@drawable/right_job_arrow"
+                android:layout_gravity="center" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"></View>
+        <!-- resechedule Now...-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/txt3resechedule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:text="@string/resechedule"
+                android:padding="@dimen/commonpadding"
+                android:singleLine="true"
+                android:textColor="@color/orange_signin_back"
+                android:textSize="@dimen/commonxlargetxt" />
+            <ImageView
+                android:id="@+id/img_nextresechedule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:src="@drawable/right_job_arrow"
+                android:layout_gravity="center" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"></View>
+        <!--Cancel JOb-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/txtCancelJOb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:text="@string/canceljob"
+                android:padding="@dimen/commonpadding"
+                android:singleLine="true"
+                android:textColor="@color/orange_signin_back"
+                android:textSize="@dimen/commonxlargetxt" />
+            <ImageView
+                android:id="@+id/img_nextCanceljob"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:src="@drawable/right_job_arrow"
+                android:layout_gravity="center" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"></View>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/screen_cross" />
+</RelativeLayout>

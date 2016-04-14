@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/partleftrightmar">
+        <!--Line-->
+        <View
+            android:id="@+id/line_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="@dimen/commonpadding"
+            android:layout_marginRight="@dimen/commonpadding"
+            android:background="@color/lb_tv_white"></View>
+
+
+        <!--Part Details description,part number,qty,part cost-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/commonpadding">
+            <EditText
+                android:id="@+id/txtPartDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rectangle"
+                android:padding="@dimen/commonpadding"
+                android:textSize="@dimen/commonmediumtxt"
+                android:hint="@string/partdes"
+                android:textColorHint="@color/lb_tv_white"
+                android:textColor="@color/lb_tv_white"
+                android:textCursorDrawable="@color/lb_tv_white"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/partleftrightmar"
+                android:layout_marginRight="@dimen/partleftrightmar"/>
+            <EditText
+                android:id="@+id/txtPartNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/white_rectangle"
+                android:padding="@dimen/commonpadding"
+                android:textSize="@dimen/commonmediumtxt"
+                android:hint="@string/partnum"
+                android:textColorHint="@color/lb_tv_white"
+                android:textColor="@color/lb_tv_white"
+                android:textCursorDrawable="@color/lb_tv_white"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/partleftrightmar"
+                android:layout_marginRight="@dimen/partleftrightmar"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <EditText
+                    android:id="@+id/txtQty"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.2"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_rectangle"
+                    android:padding="@dimen/commonpadding"
+                    android:textSize="@dimen/commonmediumtxt"
+                    android:hint="@string/qty"
+                    android:textColorHint="@color/lb_tv_white"
+                    android:textColor="@color/lb_tv_white"
+                    android:textCursorDrawable="@color/lb_tv_white"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:layout_marginLeft="@dimen/partleftrightmar" />
+                <EditText
+                    android:id="@+id/txtCost"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.8"
+                    android:maxLength="8"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_rectangle"
+                    android:padding="@dimen/commonpadding"
+                    android:textSize="@dimen/commonmediumtxt"
+                    android:hint="@string/partcost"
+                    android:textColorHint="@color/lb_tv_white"
+                    android:textColor="@color/lb_tv_white"
+                    android:textCursorDrawable="@color/lb_tv_white"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:layout_marginLeft="@dimen/commonpadding"
+                    android:layout_marginRight="@dimen/partleftrightmar"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+
+    android:padding="@dimen/commonpadding">
+
+    <ImageView
+        android:id="@+id/imgStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        />
+
+    <TextView
+        android:id="@+id/txtInstaller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.7"
+        android:paddingLeft="24dp"
+        android:singleLine="true"
+        android:text="Washer Install"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/commonxlargetxt" />
+
+    <ImageView
+        android:id="@+id/img_NextArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_weight="0.3"
+        android:src="@drawable/right_arrow" />
+
+</RelativeLayout>

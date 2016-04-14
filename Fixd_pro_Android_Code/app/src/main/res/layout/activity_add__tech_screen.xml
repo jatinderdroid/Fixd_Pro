@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/background_blur"
+    tools:context="fixtpro.com.fixtpro.Driver_Info_Activity">
+    <RelativeLayout
+
+        android:orientation="horizontal"
+        android:id="@+id/header_items"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="@dimen/padding_header_items"
+            android:visibility="invisible"
+            android:id="@+id/txtBack"
+            android:text="@string/back"
+            android:textSize="@dimen/text_size_header_items"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="@dimen/padding_header_items"
+            android:id="@+id/txtDone"
+            android:layout_alignParentRight="true"
+            android:text="@string/done"
+            android:textSize="@dimen/text_size_header_items"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_below="@+id/header_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="@dimen/layout_padding"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/layout_backsafety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_add_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/edittext_padding"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/edittext_size"
+                    android:gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white"
+                    android:text="@string/add_account" />
+                <ImageView
+                    android:id="@+id/img_add"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/addtech"/>
+
+                </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+<ListView
+    android:id="@+id/lstTechnicians"
+    android:layout_below="@+id/scroll"
+    android:dividerHeight="1dp"
+    android:divider="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></ListView>
+
+
+
+</RelativeLayout>

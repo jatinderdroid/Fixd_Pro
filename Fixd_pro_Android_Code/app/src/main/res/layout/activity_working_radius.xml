@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_blur"
+    tools:context="fixtpro.com.fixtpro.WorkingRadiusActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_header_items"
+            android:text="@string/back"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_header_items" />
+
+        <TextView
+            android:id="@+id/txtDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/padding_header_items"
+            android:text="@string/done"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_header_items" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/workleftrightmargin"
+        android:layout_marginRight="@dimen/workleftrightmargin"
+        android:layout_below="@+id/header_items">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtWorkingradius"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/workheighttopwidget"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/workingradius"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/worklargetextsize" />
+
+            <TextView
+                android:id="@+id/txthowfar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/howfarareyou"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/worksmalltextsize" />
+
+            <TextView
+                android:id="@+id/txtcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/worktopmargin"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="575847"
+                android:textColor="@color/orange_signin_back"
+                android:textSize="@dimen/worklargetextsize" />
+        </LinearLayout>
+        <!-- Drop Down.....Layout-->
+        <LinearLayout
+            android:layout_below="@+id/linear1"
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtMiles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/rectangle_full"
+                android:text="Miles"
+                android:layout_margin="@dimen/worktopmargin"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/worklargetextsize"
+                android:drawableRight="@drawable/dropicon"/>
+        </LinearLayout>
+        <!--MapView Layout-->
+        <LinearLayout
+            android:layout_below="@+id/linear2"
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <fragment
+                android:id="@+id/location_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_marginBottom="@dimen/workleftrightmargin"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

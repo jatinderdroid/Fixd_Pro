@@ -1,0 +1,54 @@
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/actionbar_bg"
+    android:minHeight="?attr/actionBarSize"
+    android:gravity="center"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/img_Toggle"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu_icon"
+        />
+    <TextView
+        android:padding="@dimen/padding_header_items"
+        android:layout_centerVertical="true"
+        android:id="@+id/txtBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        android:textSize="@dimen/text_size_header_items" />
+    <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/titletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/register_button_text"
+        android:textSize="20sp"
+
+        />
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/img_Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/refresh"
+        android:text="@string/done"/>
+    <TextView
+        android:layout_centerVertical="true"
+        android:padding="@dimen/padding_header_items"
+        android:id="@+id/txtDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/done"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_header_items" />
+</RelativeLayout>

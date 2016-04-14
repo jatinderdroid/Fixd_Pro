@@ -1,0 +1,274 @@
+<resources>
+    <string name="app_name">Fixd-Pro</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_search">Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login__register_">Login_Register_Activity</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+    <!-- Common Text-->
+    <string name="back">Back</string>
+    <string name="done">Done</string>
+    <string name="next">Next</string>
+
+    <!-- Varification Screen-->
+    <string name="varification_text">"<![CDATA[<font color='#ffffff'>enter your </font><font color='#873e10'>verification code</font>]]>"</string>
+    <string name="sign_in">"SIGN IN"</string>
+    <string name="register">"REGISTER"</string>
+    <string name="title_activity_register_">Register_Activity</string>
+
+    <!-- Register Screen-->
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="title_activity_user_profile_screen">UserProfileScreen</string>
+
+    <!-- Profile Screen-->
+    <string name="add_photo">Add Photo</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email Address</string>
+    <string name="company_name">Company Name</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="zip_code">Zip Code</string>
+
+    <!--Add_Driver_LicScreen-->
+    <string name="title_activity_driver__info_">Driver_Info_Activity</string>
+    <string name="driver_info">Add Drivers License</string>
+    <string name="ein_number">EIN Number</string>
+    <string name="txtinsurance">Insurance Carrier</string>
+    <string name="policyno">Policy Number</string>
+    <string name="tradelinenceno">Trade License Number</string>
+    <string name="yearsin">Years In Business</string>
+    <string name="tradeskill">Trade Skill</string>
+    <string name="hourlyrate">Hourly Rate</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!--BackgroundSaftyCheckScreen...-->
+    <string name="backgroun_title">Background Safety Check</string>
+    <string name="back_descripiton">Before we send you work, all Pros must go\nthrough a simple check for safety.</string>
+    <string name="securityno">Social Security Number</string>
+    <string name="this_number">This Number is kept private and only used for background checks.</string>
+    <string name="details_">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </string>
+    <string name="check_text">I acknowledge I have read and understand the terms</string>
+
+    <!--Add_TechScreen-->
+    <string name="add_account">Would you like to add\ntechs under your account?</string>
+    <!--add_tech_dialog.xml-->
+    <string name="dialog_checktext">Tech can pick up jobs through the app</string>
+    <string name="title_activity_add_bank_account">AddBankAccountActivity</string>
+
+    <!-- Bank Account Screen-->
+    <string name="add_bank_account">Add Bank Account</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="routing_number">Routing Number</string>
+    <string name="account_number">Account Number</string>
+    <string name="account_type">Account Type</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_select_trade_licence">SelectTradeLicence</string>
+
+    <!-- Select Trade Skills-->
+    <string name="select_skill">Select your Trade Skills</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_setup_complete_screen">SetupCompleteScreen</string>
+
+    <!-- Setup Complete Screen-->
+    <string name="setupcomplete">Setup Complete</string>
+    <string name="voila">Voila!</string>
+    <string name="text1">Your account setup is complete. Hang tight \n while we complete your background safety \n check. This process can take upto 48 hours.</string>
+    <string name="text2">In the meantime, Check Out this video \n on how Fixt works.</string>
+    <string name="watchvideo">WATCH THE VIDEO</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+
+
+    <string name="welcomedroid">Welcome Droid!</string>
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_myjobs">My Jobs</string>
+    <string name="nav_item_payments">Payment Details</string>
+    <string name="nav_item_myratings">My Ratings</string>
+    <string name="nav_item_settings">Settings</string>
+    <string name="nav_item_contactus">Contact Us</string>
+    <string name="nav_item_logout">Logout</string>
+
+    <string name="google_api_key">AIzaSyAi1UWkyvHrxIei9z0vMnEb6AXATBHlJHw</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- home Screen-->
+    <string name="viewall">View All</string>
+    <string name="title_activity_calendar">CalendarActivity</string>
+    <string name="title_activity_my_jobs_search">MyJobsSearchActivity</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="search">Search</string>
+    <string name="searchresults">Search Jobs</string>
+
+    <!-- Settings Screen-->
+    <string name="changepassword">Change Password</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="editcompanyinfo">Edit Company Info</string>
+    <string name="editbankinfo">Edit Bank Account Info</string>
+    <string name="edittechnicians">Edit Technicians</string>
+    <string name="locationservices">Location Services</string>
+    <string name="textmessaging">Text Messaging</string>
+    <string name="notifications">NOTIFICATIONS</string>
+    <string name="availablejobs">Available Jobs</string>
+    <string name="jobwon">Job Won</string>
+    <string name="joblost">Job Lost</string>
+    <string name="jobrescheduled">Job Rescheduled</string>
+    <string name="jobcancelled">Job Cancelled</string>
+    <string name="title_activity_contact_us">ContactUsActivity</string>
+
+    <!-- Contact US screen-->
+    <string name="contactus">Contact Us</string>
+    <string name="contactustext">If you have questions or\nfeedback, please let me know.</string>
+    <string name="title_activity_available_job_list_click">AvailableJobListClickActivity</string>
+
+    <!-- AvailableJobListClickActivity-->
+    <string name="availablejob">Available Job</string>
+
+    <!-- ScheduledJobListClickActivity-->
+    <string name="scheduledjob">Scheduled Job</string>
+
+    <!-- Decline and Cancel Job activity-->
+    <string name="declinejob">Decline Job</string>
+    <string name="ohno">Oh No!</string>
+    <string name="areusure_decline">Are you sure you want to decline this job?</string>
+    <string name="backup_decline">Once you decline a job, you cannot pick it back up.</string>
+    <string name="declineedittext">Tell us why you are\ndeclining.</string>
+
+    <string name="canceljob">Cancel Job</string>
+    <string name="areusure_cancel">Are you sure you want to cancel this job?</string>
+    <string name="backup_cancel">Once you cancel a job, you cannot pick it back up.</string>
+    <string name="canceledittext">Tell us why you are\ncancelling.</string>
+
+
+    <!-- Confirmation Activity-->
+    <string name="confirmation">Confirmation</string>
+    <string name="success">Success!</string>
+    <string name="confirmtext">You won the job.</string>
+    <string name="between">Between</string>
+    <string name="fortext">for</string>
+    <string name="title_activity_change_password">ChangePassword</string>
+
+    <!--Job Completed...Activity-->
+    <string name="job_complete">Job Completed</string>
+    <string name="serviceticket">Service Ticket</string>
+
+    <!--Service Ticket-->
+    <string name="customer">Customer:</string>
+    <string name="jobname">Job Name:</string>
+    <string name="type">Type :</string>
+    <string name="unit1">Unit 1:</string>
+    <string name="unit2">Unit 2:</string>
+    <string name="customercomplaint">Customer Complaint:</string>
+    <string name="part">Part:</string>
+    <string name="installation">Garbage Disposal-Installation:</string>
+    <string name="ice_instalation">Ice Maker-Installation:</string>
+    <string name="tax">Tax:</string>
+    <string name="total">Total:</string>
+    <string name="contractor">Contractor Repair Fee:</string>
+
+    <!--Rating Fragment-->
+    <string name="averagerating">Average Rating</string>
+    <string name="totaljobs">Total Jobs</string>
+    <string name="totalreviews">Total Reviews</string>
+
+    <!--Working Radius Activity-->
+    <string name="workingradius">Working Radius</string>
+    <string name="howfarareyou">How far are you willing to travel for job\'s?</string>
+
+    <!--Background Safty Check Dialog..........Strings-->
+    <string name="almostdone">Almost Done!</string>
+    <string name="becauseour">Because our service is free, the only thing we\nask our pro\' to pay for is the required\nbackground safety check.</string>
+    <string name="cardno">Card Number</string>
+    <string name="date">MM/YYYY</string>
+    <string name="cw">CVV</string>
+    <string name="scancard">Scan Card</string>
+
+
+    <!--Camra Gallery PopUP-->
+    <string name="cam_gallery">Take Picture</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+
+    <!--Assign Techncian Activity-->
+    <string name="assigntech">Assign Technician</string>
+    <string name="assign">Assign</string>
+
+    <!--fixtpro.com.fixtpro.views-->
+    <string name="preferences_key">fixtpro.com.fixtpro.views</string>
+    <string name="title_activity_payment_details">PaymentDetailsActivity</string>
+
+    <!--Payment and Playment Details-->
+    <string name="paymentdetails">Payment Details</string>
+    <string name="totalearning">Total Earnings</string>
+    <string name="jobsaccepted">Jobs Accepted</string>
+    <string name="hoursworked">Hours Worked</string>
+    <string name="arrivaltime">Arrival Time:</string>
+    <string name="completetime">Compeleted Time:</string>
+    <string name="summary">Summary</string>
+    <string name="tripchanges">Trip Charges:</string>
+    <string name="moterrebinding">Motor Rebinding Repair:</string>
+    <string name="subtotal">Subtotal:</string>
+    <string name="fixdfee">Fixd Fee(5%):</string>
+    <string name="totalearned">Total Earned:</string>
+
+
+    <!--Rating Details-->
+
+    <string name="rating_details">Rating Details</string>
+
+
+    <!--PartNeeded Screen-->
+    <string name="partdes">Part description</string>
+    <string name="partnum">Part number</string>
+    <string name="qty">Qty</string>
+    <string name="partcost">Part cost</string>
+
+    <!--Work Order...-->
+    <string name="neednew">Need new washer installed</string>
+    <string name="repairtype">Repair Type:</string>
+    <string name="diagnostic">Diagnostic:</string>
+    <!--Pop UP-->
+    <string name="doyouhave">Do You Have What You Need?</string>
+    <string name="ifyouhave">If you do not have the necessary parts or if\nparts need to be ordered please reschedule\njob now.</string>
+    <string name="completejobnow">Complete Job Now</string>
+    <string name="resechedule">Reschedule</string>
+
+    <!--Install Information-->
+    <string name="takeapic">Take a picture of the problem</string>
+    <string name="unitman">Unit Manufacturer</string>
+    <string name="modalno">Model Number</string>
+    <string name="serialno">Serial Number</string>
+    <string name="descriptionofwork">Description of work</string>
+
+    <!--Done Popup-->
+    <string name="wahoo">Wahoo!</string>
+    <string name="youwill">You will receive payment with 48hrs.</string>
+    <string name="jottotal">Job Total = </string>
+    <string name="yourcut">Your Cut = </string>
+    <string name="outfee">Our Fee (10%) = </string>
+    <string name="govtcuts">Governments Cut = </string>
+    <string name="title_activity_tech_profile_screen">TechProfileScreen</string>
+
+    <!--Reschedule Popup-->
+    <string name="choosetime">Choose A Time</string>
+    <string name="selectdate">Set Date</string>
+    <string name="selecttime">Set Time</string>
+    <string name="title_activity_sliding_menu">SlidingMenuActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_home_screen_new">HomeScreenNew</string>
+
+    <string name="tellus">Enter diagnosis and resolution</string>
+    <string name="title_activity_signature">SignatureActivity</string>
+
+    <!--Signature Activity-->
+    <string name="acknowledge">i acknowledge and accept receipt of goods and/or services performed and agree to the total amount listed</string>
+</resources>

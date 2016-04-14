@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_grey_blur"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/picheight"
+            android:layout_marginTop="@dimen/commonpadding"
+            android:background="@drawable/white_rectangle"
+            android:gravity="center"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <ImageView
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:id="@+id/imgMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/img_Camra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/camera" />
+
+            <TextView
+                android:layout_centerInParent="true"
+
+                android:id="@+id/txtTakepic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_Camra"
+                android:padding="5dp"
+                android:text="@string/takeapic"
+                android:textColor="@color/register_button_text"
+                android:textSize="@dimen/commonmediumtxt" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginBottom="@dimen/cdimbottomtop"
+            android:layout_marginTop="@dimen/cdimbottomtop"
+            android:background="@color/lb_tv_white"></View>
+
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/telledittxtheight"
+            android:background="@drawable/white_rectangle"
+            android:hint="@string/tellus"
+            android:imeOptions="actionNext"
+            android:gravity="top"
+            android:padding="@dimen/commonpadding"
+            android:singleLine="false"
+            android:textColor="@color/lb_tv_white"
+            android:textColorHint="@color/lb_tv_white"
+            android:textCursorDrawable="@color/lb_tv_white"
+            android:textSize="@dimen/commonmediumtxt" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

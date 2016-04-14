@@ -1,0 +1,37 @@
+<LinearLayout
+    android:id="@+id/layout8"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:weightSum="2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/txtGarInstall"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_marginTop="@dimen/serviceleftright"
+
+        android:text="@string/installation"
+        android:textColor="@color/lb_tv_white"
+        android:textSize="@dimen/serviclarge_text" />
+
+    <TextView
+        android:id="@+id/txtGarDoller"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_marginTop="@dimen/serviceleftright"
+
+        android:text="$567"
+        android:textColor="@color/lb_tv_white"
+        android:textSize="@dimen/serviclarge_text" />
+
+</LinearLayout>

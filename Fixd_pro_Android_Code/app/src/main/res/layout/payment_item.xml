@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_weight="1.8"
+    android:layout_width="0dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="14dp"
+
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:text="Jatinder Arora"
+        android:id="@+id/txtName"
+        android:textStyle="bold"
+        android:textSize="@dimen/paymentlargetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Job #8"
+        android:id="@+id/txtJobNo"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/paymentmediumtext"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <TextView
+
+            android:textStyle="bold"
+            android:textSize="@dimen/paymentlargetext"
+            android:textColor="@color/orange_signin_back"
+            android:text="$12.12"
+            android:id="@+id/txtRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

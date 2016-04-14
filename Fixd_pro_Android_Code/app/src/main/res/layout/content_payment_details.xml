@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="fixtpro.com.fixtpro.PaymentDetailsActivity"
+    tools:showIn="@layout/activity_payment_details">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:id="@+id/topHeaderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/all_margintop"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="$25,70"
+                    android:textColor="@color/orange_signin_back"
+                    android:textSize="@dimen/paymentlargetext" />
+
+                <TextView
+                    android:id="@+id/txtJobID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/all_margintop"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Job #8"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/paymentlargetext" />
+
+                <include layout="@layout/line_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout1"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/all_margintop"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Beverly Hills"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/paymentlargetext" />
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/all_margintop"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="(null)-(null)"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/paymentmediumtext" />
+
+                <TextView
+                    android:id="@+id/txtDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/all_margintop"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Fri,Dec 15, 2016"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/paymentlargetext" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtArrivaltxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/arrivaltime"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/paymentmediumtext" />
+
+                    <TextView
+                        android:id="@+id/txtArrivalTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:text="08:33 PM"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/paymentlargetext" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtCompletedtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/completetime"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/paymentmediumtext" />
+
+                    <TextView
+                        android:id="@+id/txtCompletedTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:text="08:33 PM"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/paymentlargetext" />
+                </LinearLayout>
+                <!--Line Layout....-->
+                <include layout="@layout/line_layout" />
+                <!--Summary Layout-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtSummary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:text="@string/summary"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/paymentlargetext" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtTripCharges"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="@string/tripchanges"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/paymentmediumtext" />
+
+                        <TextView
+                            android:id="@+id/txtTripChargesDoller"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text="$200.0"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/paymentmediumtext" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtRepairType"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1.5"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="@string/moterrebinding"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/paymentmediumtext" />
+
+                        <TextView
+                            android:id="@+id/txtRepairCost"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="right"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text="$150.0"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/paymentmediumtext" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtSubTotal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1.5"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="@string/subtotal"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/paymentmediumtext" />
+
+                        <TextView
+                            android:id="@+id/txtSubTotaldDoller"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="right"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text="$150.0"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/paymentmediumtext" />
+                    </LinearLayout>
+                    <!--Line Layout....-->
+                    <include layout="@layout/line_layout" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/txtFixdFee"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1.5"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="@string/fixdfee"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/paymentmediumtext" />
+
+                        <TextView
+                            android:id="@+id/txtFixdFeeDoller"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="right"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text="$150.0"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/paymentmediumtext" />
+                    </LinearLayout>
+                    <!--Line Layout....-->
+                    <include layout="@layout/line_layout" />
+                    <!--Line Layout....-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtTotalEared"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1.5"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="@string/totalearned"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/paymentmediumtext" />
+
+                        <TextView
+                            android:id="@+id/txtTotalEaredDoller"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="right"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text="$150.0"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/paymentmediumtext" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
