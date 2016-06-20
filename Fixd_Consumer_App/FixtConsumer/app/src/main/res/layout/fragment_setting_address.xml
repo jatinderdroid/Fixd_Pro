@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context="com.fixtconsumer.fragments.PlansFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:visibility="gone"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:background="@color/theme_orange"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/lblTitle"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_addresses"
+        />
+    <ListView
+        android:divider="@color/theme_orange"
+        android:dividerHeight="0dp"
+        android:layout_below="@+id/lblTitle"
+        android:id="@+id/lstAddresses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+
+</RelativeLayout>

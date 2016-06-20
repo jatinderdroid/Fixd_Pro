@@ -1,0 +1,293 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/login_bg"
+    tools:context="com.fixtconsumer.fragments.SettingsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--layout_setting top img-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/left_right_line_marging"
+            android:layout_marginRight="@dimen/left_right_line_marging"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/paddingbottom">
+
+            <ImageView
+                android:id="@+id/imgSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="45dp"
+                android:src="@drawable/setting" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@android:color/white"></View>
+
+            <RelativeLayout
+                android:id="@+id/layout_MyAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtMyAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/all_padding_in_widgets"
+                    android:singleLine="true"
+                    android:text="@string/myaccount"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsizemedium" />
+
+                <ImageView
+                    android:id="@+id/imgMyAccountNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/next_arrow_white" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@android:color/white"></View>
+
+            <RelativeLayout
+                android:id="@+id/layout_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/all_padding_in_widgets"
+                    android:singleLine="true"
+                    android:text="@string/password"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsizemedium" />
+
+                <ImageView
+                    android:id="@+id/imgPasswordNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/next_arrow_white" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@android:color/white"></View>
+
+            <RelativeLayout
+                android:id="@+id/layout_MyAddresses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtMyAddresses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/all_padding_in_widgets"
+                    android:singleLine="true"
+                    android:text="@string/my_addresses"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsizemedium" />
+
+                <ImageView
+                    android:id="@+id/imgMyAddressesNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/next_arrow_white" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@android:color/white"></View>
+
+            <RelativeLayout
+                android:id="@+id/layout_Payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/all_padding_in_widgets"
+                    android:singleLine="true"
+                    android:text="@string/payment"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsizemedium" />
+
+                <ImageView
+                    android:id="@+id/imgPaymentNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/next_arrow_white" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@android:color/white"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="@dimen/line_topmargin"
+                android:background="@android:color/white"></View>
+
+            <RelativeLayout
+                android:id="@+id/layout_LocationServices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtLocationService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/all_padding_in_widgets"
+                    android:singleLine="true"
+                    android:text="@string/location_services"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsizemedium" />
+
+                <com.fixtconsumer.views.SwitchButton
+                    android:id="@+id/switchLocationService"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:checked="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    app:kswBackDrawable="@drawable/miui_back_drawable"
+                    app:kswBackMeasureRatio="2"
+                    app:kswThumbDrawable="@drawable/miui_thumb_drawable"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@android:color/white"></View>
+
+            <RelativeLayout
+                android:id="@+id/layout_TextMessaging"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtMessaging"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/all_padding_in_widgets"
+                    android:singleLine="true"
+                    android:text="@string/textmessaging"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsizemedium" />
+                <com.fixtconsumer.views.SwitchButton
+                    android:id="@+id/switchMessaging"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:checked="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    app:kswBackDrawable="@drawable/miui_back_drawable"
+                    app:kswBackMeasureRatio="2"
+                    app:kswThumbDrawable="@drawable/miui_thumb_drawable"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@android:color/white"></View>
+
+            <RelativeLayout
+                android:id="@+id/layout_Notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/all_padding_in_widgets"
+                    android:singleLine="true"
+                    android:text="@string/notification"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsizemedium" />
+                <com.fixtconsumer.views.SwitchButton
+                    android:id="@+id/switchNotification"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:checked="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    app:kswBackDrawable="@drawable/miui_back_drawable"
+                    app:kswBackMeasureRatio="2"
+                    app:kswThumbDrawable="@drawable/miui_thumb_drawable"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@android:color/white"></View>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/txtSignOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/all_padding_in_widgets"
+        android:layout_alignParentBottom="true"
+        android:singleLine="true"
+        android:text="@string/signout"
+        android:textColor="@android:color/white"
+        android:background="@color/theme_orange"
+        android:textSize="@dimen/textsizemedium"/>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingBottom="32dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txtPlanPrice"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="24dp"
+        android:textSize="@dimen/plan_price_text_size"
+        android:text="$39.52 /mo"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_gravity="center_vertical"
+
+        android:background="@android:color/white"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="1dp"></View>
+    <TextView
+        android:id="@+id/txtequip"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="Equipment Covered"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_gravity="center_vertical"
+
+        android:background="@android:color/white"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="1dp"></View>
+</LinearLayout>
+</LinearLayout>

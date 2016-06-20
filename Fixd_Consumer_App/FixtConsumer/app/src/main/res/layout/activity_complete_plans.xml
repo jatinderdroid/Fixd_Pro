@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/complete_plan_bg"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.fixtconsumer.activities.CompletePlans">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:id="@+id/cancel"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+        <TextView
+            android:id="@+id/lblPlanName"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="@string/complete_plan"/>
+    </RelativeLayout>
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/lstCompletePlan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tableftrightmargin"
+        android:layout_marginRight="@dimen/tableftrightmargin"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@drawable/schedule"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/img_Completed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/completed"
+            android:layout_gravity="center"
+            android:textColor="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/img_schedule"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/scheduledjob"
+            android:layout_gravity="center"
+            android:textColor="@android:color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/tabs_margin"
+        android:orientation="vertical">
+
+        <com.paging.listview.PagingListView
+            android:id="@+id/listview_Completed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/theme_orange"
+            android:dividerHeight="1.2dp"></com.paging.listview.PagingListView>
+
+        <com.paging.listview.PagingListView
+            android:id="@+id/listview_Schedule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/theme_orange"
+            android:dividerHeight="1.2dp"
+            android:visibility="gone"></com.paging.listview.PagingListView>
+    </LinearLayout>
+
+
+</LinearLayout>

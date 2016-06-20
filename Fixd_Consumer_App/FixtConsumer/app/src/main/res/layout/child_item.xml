@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    >
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:id="@+id/country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/flag"
+
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/flag"
+        android:text="TextView"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/flag"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="27dp"
+        android:src="@drawable/ico_contact" />
+    <ImageView
+        android:padding="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/cross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginLeft="27dp"
+        android:src="@drawable/orange_check" />
+</RelativeLayout>

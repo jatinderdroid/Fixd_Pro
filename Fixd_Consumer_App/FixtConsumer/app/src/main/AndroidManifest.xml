@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fixtconsumer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.REGISTER" />
+    <uses-permission android:name="fixtpro.com.fixtpro.permission.C2D_MESSAGE" />
+
+    <permission
+        android:name="fixtpro.com.fixtpro.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <permission
+        android:name="fixtpro.com.fixtpro.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <application
+        android:name=".FixdConsumerApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name=".activities.Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginSignUpActivity"
+            android:label="@string/title_activity_login_sign_up"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base" />
+        <activity
+            android:name=".activities.Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.SignUp"
+            android:label="@string/title_activity_sign_up"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.PlansActivity"
+            android:label="@string/title_activity_plans"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.ContactUsActivity"
+            android:label="@string/title_activity_contact_us"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base" />
+        <activity
+            android:name=".activities.CompletePlans"
+            android:label="@string/title_activity_complete_plans"
+            android:theme="@style/MyMaterialTheme.Base" />
+        <activity
+            android:name=".activities.CommonPlans"
+            android:label="@string/title_activity_common_plans"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base" />
+        <activity
+            android:name=".activities.InviteFriendActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base" />
+        <activity
+            android:name=".activities.InviteByEmailActivity"
+            android:label="@string/title_activity_invite_by_email"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base" />
+        <activity
+            android:name=".activities.InviteByPhoneActivity"
+            android:label="@string/title_activity_invite_by_phone"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base" />
+        <activity
+            android:name=".activities.CancelSchduleJob"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base" />
+        <activity
+            android:name=".activities.ConfirmCancelSchduleJob"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity android:name=".activities.ForgotPassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"></activity>
+        <service
+            android:name="com.fixtconsumer.gcm_components.MessageReceivingService"
+            android:label="fixtpro.com.fixtpro.MessageReceivingService" >
+            <intent-filter>
+                <action android:name="fixtpro.com.fixtpro.AndroidMobilePushApp" />
+                <action android:name="fixtpro.com.fixtpro.ExternalReceiver" />
+                <category android:name="fixtpro.com.fixtpro" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.fixtconsumer.gcm_components.ExternalReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <action android:name="com.google.android.c2dm.intent.REGISTER" />
+
+                <category android:name="fixtpro.com.fixtpro" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

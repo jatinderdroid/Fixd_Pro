@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       android:paddingBottom="10dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/tabs_margin"
+                android:src="@drawable/circle"/>
+
+            <TextView
+                android:id="@+id/txt_tech_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tech Not Assign"
+                android:layout_marginTop="@dimen/tabs_margin"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsizesmall" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_Problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COOKTOP REPAIR"
+                android:layout_marginTop="@dimen/margin_top"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsizemedium" />
+
+            <TextView
+                android:id="@+id/txt_JobDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="May 31, 2016"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/tabs_margin"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsizesmall" />
+
+            <TextView
+                android:id="@+id/txt_JobTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="08:08 AM - 09:00 AM"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/tabs_margin"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsizesmall" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

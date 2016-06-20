@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">Fixd Consumer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_login_sign_up">LoginSignUpActivity</string>
+    <string name="title_activity_login">Login</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- Drawer Items-->
+    <string name="welcomedroid">Welcome Droid!</string>
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_myjobs">My Jobs</string>
+    <string name="nav_item_plans">Protection Plans</string>
+    <string name="nav_item_message">Messages</string>
+    <string name="nav_item_revards">Revards</string>
+    <string name="nav_item_settings">Settings</string>
+    <string name="nav_item_referfriend">Refer a Friend</string>
+    <string name="nav_item_contactus">Contact Us</string>
+    <string name="nav_item_logout">Logout</string>
+
+    <!-- Login Sign Up Screen-->
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="features_text1">Home service at your fingertips\n your schedule</string>
+    <string name="features_text2">Background checked, professional \nservice technicians</string>
+    <string name="features_text3">Affordable,Fixtcost pricing</string>
+    <string name="features_text4">Peace-of-mind, home protection plans</string>
+    <string name="title_activity_sign_up">SignUp</string>
+
+    <!-- Sign up Screen-->
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="add_phote">Add Photo</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email Address</string>
+    <string name="email_phone">Email/Phone</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="address">Address Line1</string>
+    <string name="address2">Address Line2</string>
+    <string name="zip">Zip Code</string>
+    <string name="invite">Invite Code</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="i_agrre_text">"<![CDATA[<font color='#959595'>I agree to the </font><font color='#f37421'><i>Fixt</i> </font><font color='#f37421'>term of use</font>]]>"</string>
+
+    <!--Login Screen-->
+    <string name="forget_pass">Forgot Your Password?</string>
+
+    <!--Alert Dialog Manager-->
+    <string name="alert_title">Fixd!</string>
+    <string name="title_activity_plans">PlansActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_contact_us">ContactUsActivity</string>
+
+    <!-- Contact US screen-->
+    <string name="contactus">Contact Us</string>
+    <string name="contactustext">If you have questions or\nfeedback, please let me know.</string>
+
+    <!-- Protection Plans-->
+    <string name="coverage_options">To get started, select a coverage \noption from below</string>
+    <string name="manage_plan">Manage your plan or add coverage</string>
+    <string name="title_activity_complete_plans">CompletePlans</string>
+    <string name="title_activity_common_plans">CommonPlans</string>
+    <!-- -->
+    <string name="what_type_of_project">What Type of Project?</string>
+    <string name="when_do_you_want_service">When do you want service?</string>
+    <string name="what_is_the_power_source">Whats the power source?</string>
+    <string name="what_is_problem">Whats the problem?</string>
+    <string name="which_appliance">Which Appliance(s)?</string>
+    <string name="summary">Summary</string>
+    <string name="how_many_locks">How many Locks?</string>
+    <string name="my_addresses">My Addresses</string>
+    <string name="complete_plan">Complete Plan</string>
+
+    <!--Camra Gallery PopUP-->
+    <string name="cam_gallery">Take Picture</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+
+    <!-- Add Card Dialog-->
+    <string name="almostdone">Almost Done!</string>
+    <string name="add_card">Add Card</string>
+    <string name="payment_failed">Payment Failed</string>
+    <string name="cancel_plan">Cancel Protection Plan</string>
+    <string name="cancel_sure">Are you sure you want to Cancel?</string>
+    <string name="zip_code">Zip</string>
+    <string name="becauseour">Because our service is free, the only thing we\nask our pro\' to pay for is the required\nbackground safety check.</string>
+    <string name="cardno">Card Number</string>
+    <string name="date">MM/YYYY</string>
+    <string name="cw">CVV</string>
+    <string name="scancard">Scan Card</string>
+
+    <!-- -->
+    <string name="purchase">Purchase</string>
+
+    <!-- Address Settings-->
+    <string name="receive_service">Where would you like to receive service?</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="try_again">Try Again</string>
+    <string name="update_method">Please update method of payment.</string>
+    <!--Delete PopUp-->
+    <string name="topinstruction">Are you sure you want\nto delete this address?</string>
+    <!--Scheduling Popup-->
+    <string name="scheduling">Scheduling Job...</string>
+    <!--DonePupup-->
+    <string name="done">Done</string>
+    <string name="yourfixpro">Your Fixt Pro will be there</string>
+    <string name="between">Between</string>
+    <string name="yourappointment">Your appointment is booked.</string>
+
+    <!--Setting Fragment-->
+    <string name="myaccount">My Account</string>
+    <string name="myaddresses">My Addresses</string>
+    <string name="payment">Payment</string>
+    <string name="location_services">Location Services</string>
+    <string name="textmessaging">Text Messaging</string>
+    <string name="notification">Notifications</string>
+    <string name="signout">Sign Out</string>
+    <!--Setting Fragments-->
+    <string name="currentpassword">Current Password</string>
+    <string name="newpassword">New Password</string>
+    <!--Invite Friend-->
+    <string name="referafriend">Refer A Friend</string>
+    <string name="getdiscount">GET DISCOUNTS ON SERVICE</string>
+    <string name="referafriendto_fixd">Refer friends to Fixd and you will get\ndiscounts on your next service.</string>
+    <string name="details">Details</string>
+    <string name="emailinvite">Email Invite</string>
+    <string name="textinvite">Text Invite</string>
+
+    <!--MyJobsFramgent-->
+    <string name="completed">Completed</string>
+    <string name="schedule">Scheduled</string>
+    <string name="scheduledjob">Scheduled Job</string>
+    <string name="hangtightwhilewematch">Hang tight while we match you\nwith a highly rated pro for you\njob!</string>
+    <string name="thismaytake">This may take a few minutes,so we\nwill let you know when one has been</string>
+    <string name="canceljob">Cancel Job</string>
+    <string name="reset">Reset</string>
+    <string name="forgot_pass_desc">Enter your registered Phone number/Email below, and we will email you a link to reset the password.</string>
+    <string name="ohno">Oh No!</string>
+    <string name="areyousure">Are you sure you want to cancel\nthis job?</string>
+    <string name="telluswhy">Tell us why you are\ncancelling.</string>
+    <string name="cancel">Cancel</string>
+    <string name="referinvite">Invite</string>
+    <string name="invitetype">Type an email address</string>
+    <string name="invitemobile">Type a mobile number</string>
+    <!--Completed Fragment-->
+    <string name="completedjob">Completed Job</string>
+    <string name="jobsummary">Job Summary</string>
+    <string name="serviceticket">Service Ticket</string>
+    <string name="recipt">Receipt</string>
+    <string name="yourated">You Rated</string>
+    <string name="title_activity_invite_by_email">InviteByEmailActivity</string>
+    <string name="title_activity_invite_by_phone">InviteByPhoneActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+
+
+    <!-- GCM Strings-->
+    <string name="project_number">44977128671</string>
+    <string name="introduction">Welcome! </string>
+    <string name="clear_screen">Clear Screen</string>
+    <string name="first_launch">First Launch</string>
+    <string name="num_of_missed_messages">MissedMessageCount</string>
+    <string name="lines_of_message_count">LinesOfMessageCount</string>
+    <string name="preferences">PreferencesFile</string>
+    <string name="notification_number">1337</string>
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingTop="@dimen/new_address_layout_padding"
+    android:paddingBottom="18sp"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/btnNewAddress"
+        android:paddingLeft="@dimen/new_address_button_padding"
+        android:paddingRight="@dimen/new_address_button_padding"
+        android:text="New Address"
+        android:background="@drawable/round_orange_box"
+        android:textColor="@color/theme_orange"
+        android:textSize="@dimen/where_service_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

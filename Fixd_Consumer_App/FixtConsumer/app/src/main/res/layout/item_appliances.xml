@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:padding="14dp"
+        android:id="@+id/lblname"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginRight="18dp"
+        android:id="@+id/quantity_container"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/minus"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:background="@drawable/orange_box"
+            android:gravity="center"
+            android:text="-"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="0"
+            android:id="@+id/values"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/plus"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:background="@drawable/orange_box"
+            android:gravity="center"
+            android:text="+"
+
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </LinearLayout>
+</RelativeLayout>

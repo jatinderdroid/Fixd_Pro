@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.fixtconsumer.fragments.HowManyLocksFragment">
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:background="@color/theme_orange"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/lblTitle"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/how_many_locks"
+        />
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:layout_below="@+id/lblTitle"
+        android:dividerHeight="1dp"
+        android:divider="@color/theme_orange"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lstLocks" />
+
+</RelativeLayout>

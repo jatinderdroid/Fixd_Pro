@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingTop="@dimen/where_service_padding"
+    android:paddingBottom="@dimen/where_service_padding"
+    android:layout_height="wrap_content">
+<TextView
+    android:textSize="@dimen/where_service_text"
+    android:gravity="center"
+    android:textColor="@android:color/white"
+    android:text="@string/receive_service"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+</LinearLayout>

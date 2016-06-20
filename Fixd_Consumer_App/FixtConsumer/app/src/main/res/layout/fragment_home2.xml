@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/complete_plan_bg"
+    android:layout_height="match_parent"
+    tools:context="com.fixtconsumer.fragments.HomeServiceFragment">
+    <ListView
+        android:divider="@color/theme_orange"
+        android:dividerHeight="1dp"
+        android:id="@+id/lstHomeServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</RelativeLayout>

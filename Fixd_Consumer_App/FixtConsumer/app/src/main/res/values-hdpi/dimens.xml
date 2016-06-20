@@ -1,0 +1,78 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="slidiing_menu_width">80dp</dimen>
+    <!-- login-signup-activity-->
+    <dimen name="feature_text_size">12sp</dimen>
+    <dimen name="login_sign_up_button_margin">24dp</dimen>
+    <dimen name="indicator_margin_top">9dp</dimen>
+    <dimen name="indicator_margin_bottom">12dp</dimen>
+    <dimen name="sign_up_text_size">14sp</dimen>
+    <dimen name="logo_top_margin">38dp</dimen>
+    <!--Sign up-->
+    <dimen name="edit_text_size">16sp</dimen>
+    <dimen name="edit_text_margin">4dp</dimen>
+    <dimen name="agree_text_top_margin">24dp</dimen>
+    <dimen name="agree_text_size">12sp</dimen>
+    <dimen name="login_signup_text_size">16sp</dimen>
+    <dimen name="create_account_text_size">17sp</dimen>
+    <dimen name="add_photo_text_size">15sp</dimen>
+
+    <!-- Home Fragment-->
+    <dimen name="items_text_size">16sp</dimen>
+
+    <!-- Tell us more-->
+    <dimen name="problem_text_height">96dp</dimen>
+    <dimen name="take_pic_container_height">160dp</dimen>
+    <dimen name="popuplayoutmagin">11dp</dimen>
+    <dimen name="edittext_padding">6dp</dimen>
+
+    <!--Camra_Gallery Dialog(PopUP)-->
+    <dimen name="camgall_texttop">25sp</dimen>
+    <dimen name="camgall_textbottom">20sp</dimen>
+
+    <dimen name="cover_width">120dp</dimen>
+    <dimen name="cover_height">180dp</dimen>
+
+    <!-- Card Dialog-->
+
+    <dimen name="dialoglargetextsize">25sp</dimen>
+    <dimen name="dialogsmalltextsize">14sp</dimen>
+    <dimen name="dialogmediumtextsize">18sp</dimen>
+    <!--Plan Complete-->
+    <dimen name="plan_price_text_size">26sp</dimen>
+    <dimen name="button_purchase_top_margin">60dp</dimen>
+<!--Re key-->
+    <dimen name="lock_item_text_size">15sp</dimen>
+    <dimen name="lock_item_text_padding">7dp</dimen>
+
+    <!-- Address-->
+    <dimen name="where_service_text">16sp</dimen>
+    <dimen name="where_service_padding">24dp</dimen>
+    <dimen name="new_address_layout_padding">14dp</dimen>
+    <dimen name="new_address_button_padding">32dp</dimen>
+
+    <!--Delete PopUp-->
+    <dimen name="textsizesmall">16sp</dimen>
+    <dimen name="textsizemedium">19sp</dimen>
+    <dimen name="textsizelarge">22sp</dimen>
+    <dimen name="margin_top">24dp</dimen>
+
+    <!--setting Screen-->
+    <dimen name="left_right_line_marging">7dp</dimen>
+    <dimen name="left_marging">13dp</dimen>
+    <dimen name="all_padding_in_widgets">11dp</dimen>
+    <dimen name="line_topmargin">32dp</dimen>
+    <dimen name="paddingbottom">65dp</dimen>
+    <!--MyJobs Fragment-->
+    <dimen name="tabs_margin">14dp</dimen>
+    <dimen name="tableftrightmargin">46dp</dimen>
+    <!--Cancel JOb Fragment-->
+    <dimen name="tellusedit_height">150dp</dimen>
+    <!--Completed Jobs-->
+    <dimen name="bigcircleheight">103dp</dimen>
+    <dimen name="ratinglargestar">50dp</dimen>
+
+</resources>

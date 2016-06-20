@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orange_background"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imgThumb"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumbup"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:padding="5dp"
+            android:text="Wahoo!"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsizelarge"/>
+        <TextView
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+            android:text="@string/yourappointment"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/textsizelarge"/>
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:padding="5dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/yourfixpro"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsizesmall"/>
+        <TextView
+            android:id="@+id/txtDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="16dp"
+            android:text="Today,Aug 3,2016"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsizelarge"/>
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:padding="5dp"
+
+            android:text="@string/between"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsizesmall"/>
+        <TextView
+            android:id="@+id/txtTimeSlotName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+
+            android:text="10:00 am - 12:00 pm"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsizelarge"/>
+        <TextView
+            android:id="@+id/txtDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="@string/done"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/delete_box"
+            android:textSize="@dimen/textsizelarge"/>
+
+    </LinearLayout>
+
+</LinearLayout>

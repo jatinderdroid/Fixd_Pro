@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:coverflow="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/background"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="it.moondroid.carousellayoutdemo.CoverFlowActivity">
+    <TextView
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:background="@color/theme_orange"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/lblTitle"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/summary"></TextView>
+    <ScrollView
+        android:layout_above="@+id/btnSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_below="@+id/lblTitle"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <com.fixtconsumer.views.FeatureCoverFlowCustom
+            android:id="@+id/coverflow"
+            android:gravity="center_horizontal"
+            coverflow:spacing="0.6"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            />
+        <TextView
+            android:id="@+id/txtName"
+            android:textSize="26sp"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="@dimen/textsizesmall"
+            android:textColor="@android:color/white"
+            android:id="@+id/txtAddress"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtTimeAndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="Today,Aug 3,2016"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsizelarge"/>
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:padding="5dp"
+
+            android:text="@string/between"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsizesmall"/>
+        <TextView
+            android:id="@+id/txtTimeSlotName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+
+            android:text="10:00 am - 12:00 pm"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsizelarge"/>
+        <EditText
+            android:enabled="false"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginLeft="36dp"
+            android:id="@+id/edtDesc"
+            android:gravity="top"
+            android:background="@drawable/round_white_box"
+            android:layout_width="match_parent"
+            android:layout_height="72dp" />
+    </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/btnSchedule"
+        android:textSize="20sp"
+        android:layout_marginRight="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_orangebutton"
+        android:textColor="@android:color/white"
+        android:text="Schedule"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

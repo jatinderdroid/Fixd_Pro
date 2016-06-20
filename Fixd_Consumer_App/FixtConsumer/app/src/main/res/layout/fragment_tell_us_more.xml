@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appliance_bg"
+    tools:context="com.fixtconsumer.fragments.PlansFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:background="@color/theme_orange"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/lblTitle"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/what_is_problem"
+        />
+    <TextView
+        android:visibility="gone"
+        android:padding="2dp"
+        android:textColor="@android:color/white"
+        android:background="@color/theme_orange"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/lblAppliance"
+        android:layout_below="@+id/lblTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dishwasher"
+
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/lblAppliance"
+        android:id="@+id/lstProblem"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/problem_text_height"
+            android:background="@drawable/white_rectangle"
+            android:hint="Tell Us about the problem"
+            android:imeOptions="actionNext"
+            android:gravity="top"
+            android:padding="10dp"
+            android:singleLine="false"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textCursorDrawable="@android:color/white"
+            android:textSize="18sp" />
+        <Spinner
+            android:layout_marginTop="18dp"
+            android:id="@+id/txtBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_rectangle"
+            android:spinnerMode="dialog"
+            android:popupBackground="#00000000"
+            android:theme="@style/SpinnerStyle"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/white_rectangle"
+            android:gravity="center"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <ImageView
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:id="@+id/imgMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_marginTop="18dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/img_Camra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/camera" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/txtTakepic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/img_Camra"
+                android:padding="5dp"
+                android:text="Send us Picture"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

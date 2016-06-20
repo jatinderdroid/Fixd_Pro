@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appliance_bg"
+    tools:context="com.fixtconsumer.fragments.PlansFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:background="@color/theme_orange"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/lblTitle"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/what_is_the_power_source"
+        />
+    <ListView
+        android:visibility="gone"
+        android:divider="@color/theme_orange"
+        android:dividerHeight="0.5dp"
+        android:layout_below="@+id/lblTitle"
+        android:id="@+id/lstChoosePowerSource"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+    <ExpandableListView
+        android:divider="@color/theme_orange"
+        android:dividerHeight="0.5dp"
+        android:layout_below="@+id/lblTitle"
+        android:id="@+id/lstPowerSources"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+    </ExpandableListView>
+</RelativeLayout>

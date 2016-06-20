@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/fixit_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_padding">
+
+        <TextView
+            android:id="@+id/lblPagerScreenText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/features_text1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/feature_text_size" />
+
+        <com.fixtconsumer.views.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_pager"
+            android:layout_marginBottom="@dimen/indicator_margin_bottom"
+            android:layout_marginTop="@dimen/indicator_margin_top"
+            app:fillColor="@android:color/white"
+            app:pageColor="#51ffffff"
+            app:strokeWidth="0dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_sign_up_button_margin"
+            android:layout_marginRight="@dimen/login_sign_up_button_margin"
+            android:background="@color/theme_orange"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/login_signup_text_size" />
+
+        <Button
+            android:layout_marginTop="18dp"
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_sign_up_button_margin"
+            android:layout_marginRight="@dimen/login_sign_up_button_margin"
+            android:background="@android:color/white"
+            android:text="@string/signup"
+            android:textAllCaps="false"
+            android:textColor="@color/theme_orange"
+            android:textSize="@dimen/login_signup_text_size" />
+    </LinearLayout>
+</RelativeLayout>

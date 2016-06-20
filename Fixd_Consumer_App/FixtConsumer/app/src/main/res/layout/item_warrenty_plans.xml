@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:id="@+id/container_layout"
+    android:background="@drawable/img_appliance_bg"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_weight="9"
+    android:layout_width="0dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lblprice"
+            android:layout_marginLeft="12dp"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:text="$48.23 /mo"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/lblname"
+            android:layout_marginLeft="12dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Complete"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/lbldescription"
+            android:layout_marginLeft="12dp"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:text="System + Appliance + Electronics"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/next_arrow_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

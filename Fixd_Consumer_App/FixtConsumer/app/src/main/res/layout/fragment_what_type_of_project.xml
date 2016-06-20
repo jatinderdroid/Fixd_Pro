@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container_main"
+    android:background="@drawable/appliance_bg"
+    tools:context="com.fixtconsumer.fragments.PlansFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:background="@color/theme_orange"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/lblTitle"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/what_type_of_project"
+         />
+    <ListView
+        android:divider="@color/theme_orange"
+        android:dividerHeight="1dp"
+        android:layout_below="@+id/lblTitle"
+        android:id="@+id/lstTypeProject"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</RelativeLayout>
